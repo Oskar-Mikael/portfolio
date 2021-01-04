@@ -1,0 +1,92 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+.margin {
+    margin-bottom: 5rem;
+}
+
+.margin-sm {
+    margin-bottom: 3rem;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-center {
+	text-align: center !important;
+}
+.text-left {
+	text-align: left !important;
+}
+.text-right {
+	text-align: right !important;
+}
+.float-left {
+    float: right;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.text-lg {
+    font-size: 1.9rem;
+}
+
+.text-md {
+    font-size: 1.5rem;
+}
+
+
+
+.text-wrap {
+    max-width: 350px;
+}
+
+@for $i from 0 through 5 {
+	// Margins
+	// all sides
+	.m-#{$i} {
+		margin: #{$i} !important;
+	}
+	// top
+	.mt-#{$i} {
+		margin-top: #{$i}rem !important;
+	}
+	// bottom
+	.mb-#{$i} {
+		margin-bottom: #{$i}rem !important;
+	}
+	// right
+	.mr-#{$i} {
+		margin-right: #{$i}rem !important;
+	}
+	// left
+	.ml-#{$i} {
+		margin-left: #{$i}rem !important;
+	}
+
+	// Padding
+	// all sides
+	.p-#{$i} {
+		padding: #{$i}rem !important;
+	}
+	// top
+	.pt-#{$i} {
+		padding-top: #{$i}rem !important;
+	}
+	// bottom
+	.pb-#{$i} {
+		padding-bottom: #{$i}rem !important;
+	}
+	// right
+	.pr-#{$i} {
+		padding-right: #{$i}rem !important;
+	}
+	// left
+	.pl-#{$i} {
+		padding-left: #{$i}rem !important;
+	}
+}
