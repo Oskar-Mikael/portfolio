@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap"
             rel="stylesheet">
     </head>
-<body>
-    <nav id="navbar">
+
+    <body>
+        <nav id="navbar">
             <button id="hamburger"></button>
             <ul id="menu">
-                <a href="/index.html"><li>
+                <a href="/index.html">
+                    <li>
                         Home
-                    </a></li>
+                </a></li>
                 <li><a href=/pages/cv.html>
                         CV
                     </a></li>
@@ -25,7 +28,64 @@
                         Blog
                     </a></li>
             </ul>
-
         </nav>
-</body>
+        <main class="container contact">
+
+            <h1 class="text-lg mt-5 pt-1">
+                Contact me
+            </h1>
+            <p class="text-md">
+                Contact me if you have any questions or want further information.
+            </p>
+            <p class="text-md mb-3">
+                I respond fastest on E-Mail, but all ways of contacting works absolutely fine.
+            </p>
+            <div class="contact-grid">
+                <span>
+                    <a href="mailto:oskar.m.bostrom@gmail.com">
+                        <img src="../assets/email-icon.png" alt="email-icon" class="email-icon" />
+                        <h3 class="mb-3">
+                            Email
+                        </h3>
+                    </a>
+                </span>
+                <span>
+                    <a href="https://www.linkedin.com/in/oskar-bostr%C3%B6m-6462b81b5/" target="_blank">
+                        <img src="../assets/linkedin-icon.png" alt="linkedin-icon" class="linkedin-icon" />
+                        <h3 class="mb-3">
+                            LinkedIn
+                        </h3>
+                    </a>
+                </span>
+                <span>
+                    <a href="https://www.instagram.com/ogge_bstrom/" target="_blank">
+                        <img src="../assets/instagram-icon.png" alt="instagram-icon" class="instagram-icon" />
+                        <h3 class="mb-3">
+                            Instagram
+                        </h3>
+                    </a>
+                </span>
+                <span>
+                    <a href="https://github.com/oskar-mikael" target="_blank">
+                        <img src="../assets/github-icon.png" alt="github-icon" class="github-icon" />
+                        <h3 class="mb-5">
+                            Github
+                        </h3>
+                    </a>
+                </span>
+            </div>
+            <h2 class="mb-1">
+                Send a message
+            </h2>
+            <form class="contact-form">
+                <div class="form-row">
+                <input type="text" placeholder="Name" name="name" class="mb-2">
+                <input type="email" placeholder="Email" name="email" class="mb-2">
+                </div>
+                <textarea name="message" placeholder="Message"></textarea>
+                <button class="mt-3" type="submit">Send</button>
+            </form>
+        </main>
+    </body>
+
 </html>
