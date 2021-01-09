@@ -120,21 +120,6 @@ nav>ul>li:hover {
     min-width: 15rem;
 }
 
-.box-h {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
-    text-align: center;
-}
-
-.box-p {
-    margin: 0 auto;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 0.5rem;
-}
-
 .box-2 {
     background-color: rgb(230, 183, 113);
     grid-area: box-2;
@@ -149,6 +134,20 @@ nav>ul>li:hover {
     border-radius: 10px;
 }
 
+.box-h {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.box-p {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
 
 
 .project-img {
@@ -299,6 +298,9 @@ nav>ul>li:hover {
     display: flex;
     margin: 0 auto;
     border: 5px solid black;
+    max-height: 400px;
+    max-width: 90%
+
 }
 
 @media only screen and (max-width: 1139px) {
