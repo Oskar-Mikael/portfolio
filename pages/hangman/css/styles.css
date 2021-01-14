@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #666;
+  font-family: sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
+
+header {
+  background-color: silver;
+  color: #fff;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 4.5em;
+  text-align: center;
+}
+
+#heading {
+  font-size: 2.5rem;
+}
+
+footer {
+  background-color: silver;
+  border-top: 1px solid #666;
+  margin-top: 20px;
+  padding-top: 30px;
+  color: #fff;
+  font-size: 1.25em;
+  width: 100%;
+  flex: none;
+  text-align: center;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto
+}
+
+.text-center {
+  text-align: center;
+}
+
+ul>li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 5px 5px;
+}
+
+.btn {
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: greenyellow;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.start {
+  padding: 10px 15px;
+  margin-top: 2rem;
+  color: white;
+  background-color: rgb(43, 216, 58);
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+}
+.restart {
+  padding: 10px 15px;
+  margin-top: 2rem;
+  color: white;
+  background-color: rgb(0, 140, 255);
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  
+}
+
+button:disabled {
+  background-color: grey;
+}
+
+#gameBoard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.margin {
+  margin-bottom: 2rem;
+}
+
+#wordDisplay {
+  font-size: 3rem
+}
+#guessText {
+  display: none;
+}
+#guessesText {
+  display: none
+}
+
+#hangmanImg {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  height: 90%;
+}
+
+p {
+  font-size: 2rem
+}
+
+@media only screen and (max-width: 1140px) {
+  .container {
+      padding: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #wordDisplay {
+      font-size: 2rem;
+  }
+}

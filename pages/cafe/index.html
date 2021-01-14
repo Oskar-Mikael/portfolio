@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+
+
+    <link rel="stylesheet" href="dist/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Boström Café - Hem</title>
+</head>
+
+<body>
+
+    <header  id="section-1" style="background-image: url(assets/cafe_restaurant_table.jpg);">
+        <div class="container">
+            <nav id="main-menu" role="navigation">
+                <ul>
+                    <li class="active"><a href="#" tabindex="1">Hem</a></li>
+                    <li><a href="#section-2" tabindex="2">Om oss</a></li>
+                    <li><a href="#section-3" tabindex="3">Boka bord</a></li>
+                    <li><a href="#footer" tabindex="4">Vår menu</a></li>
+                </ul>
+            </nav>
+
+            <h1 id="main-heading">
+                Välkommen till Boströms Café!</h1>
+            <p>Vi är ett nyöppnat café med höga ambitioner och ska servera kvalités mat och dryck</p>
+
+            <iframe class="video" tabindex="5" src="https://www.youtube.com/embed/Tdwetb0Mvyc" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+
+        </div>
+    </header>
+
+    <section id="section-2">
+        <div class="container">
+
+            <div class="title-box">
+                <h2>Vårt urval av godsaker</h2>
+                <p>Hos oss hittar du alltid färska råvaror och servering i hög klass.
+                </p>
+            </div>
+
+            <div class="blurb">
+                <img src="assets/mug.png" alt="en-mugg">
+                <h3>Färskt Kaffe</h3>
+                <p>Alltid nymalet färskt kaffe för att släcka törsten. Fair trade så klart!</p>
+            </div>
+            <div class="blurb">
+                <img src="assets/bread.png" alt="ett-bröd">
+                <h3>Nybakat Bröd</h3>
+                <p>Vi serverar bara vårt egna bakade bröd, nybakat varje morgon. </p>
+            </div>
+            <div class="blurb">
+                <img src="assets/ice-cream.png" alt="glass">
+                <h3>Italiensk Glass</h3>
+                <p>Sugen på något sött? Prova italiensk glass i världklass, tillsammans med husets egna topping.</p>
+            </div>
+            <div class="blurb">
+                <img src="assets/computer.png" alt="en-dator">
+                <h3>En lugn miljö</h3>
+                <p>Vi är belagda i en lugn del av stan. Perfekt om du vill koppla av, och fokusera på arbete eller
+                    studier.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section-3" style="background-image: url(assets/coffee_cup_hands.jpg);">
+        <div class="container">
+            <div class="title-box">
+                <h2>Boka bord
+                </h2>
+                <p>Gör en bokning för att vara säker på att det finns plats!
+                </p>
+            </div>
+            <button tabindex="6" type="button" class="big-button">Boka</button>
+        </div>
+    </section>
+
+    <footer id="footer" tabindex="7">
+        <div class="container">
+            <div class="title-box">
+                <h2>Se vår Meny</h2>
+            </div>
+            <embed class="pdf" src="menu-cafe.pdf" tabindex="8" type="application/pdf" />
+        </div>
+            <p class="copyright">&copy; 2020 Oskar Boström</p>
+
+        
+    </footer>
+</body>
+
+</html>
