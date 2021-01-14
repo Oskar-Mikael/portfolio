@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="/assets/favicon.png"/>
+        <link rel="icon" type="image/png" href="/assets/favicon.png" />
         <title>CV - Oskar Boström</title>
         <link rel="stylesheet" href="/css/style.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap"
@@ -14,17 +14,28 @@
     <body>
         <nav id="navbar">
             <a href="/index.html">
-                <img src="/assets/favicon.png" class="favicon">
-                </a>
+                <img src="assets/favicon.png" class="favicon">
+            </a>
             <button id="hamburger"></button>
             <ul id="menu">
-                <a href="/index.html">
-                    <li>
+                <li class="active">
+                    <a href="./index.html">
                         Home
-                </a></li>
-                <li class="active"><a href=/pages/cv.html>
-                        CV
-                    </a></li>
+                    </a>
+                </li>
+                <li class="dropdown">
+
+                    CV
+                    <div class="dropdown-content text-sm text-white">
+                        <a href="/pages/cv.html">
+                            <p class="mb-1">Swedish</p>
+                        </a>
+                        <a href="/pages/cv-en.html">
+                            <p>English</p>
+                        </a>
+                    </div>
+
+                </li>
                 <li><a href="/pages/contact.html">
                         Contact
                     </a></li>
@@ -35,11 +46,11 @@
 
         </nav>
         <section class="cv container text-lg ">
-            
+
             <h1 class="mt-5 mb-2">
                 Oskar Boström
             </h1>
-            <p class="text-white mb-5">
+            <p class="text-white mb-5 cv-contact">
                 Telefon, mobil: 073 – 991 37 16 <br>
                 E-post: oskar.m.bostrom@gmail.com
             </p>
@@ -53,7 +64,8 @@
                 Arbetat som logistikansvarig och orderhanterare. Tagit
                 emot
                 ordrar via epost och telefon, registrerat order i Visma, beställt leveranser och plockat, packat samt
-                skickat gods. Huvudansvar för kundkontakt och leverantörkontakt och ansvarat för att alla ordrar skickas iväg, både inrikes och utrikes.
+                skickat gods. Huvudansvar för kundkontakt och leverantörkontakt och ansvarat för att alla ordrar skickas
+                iväg, både inrikes och utrikes.
                 Fick möjlighet att jobba med ytterligare diverse praktiska
                 arbeten
                 företaget hade i behov av hjälp. Jag monterade och byggde kopplingsboxar med tillhörande kablage, efter
@@ -65,7 +77,8 @@
                 Solbrännan Restaurang och Café, Österåker 2017-2018
             </h3>
             <p class="text-md text-white mb-3">
-                Sommarjobbat under sommaren 2017 och 2018 samt extrajobbat under hösten. Har utfört serveringsarbete med nära kundkontakt,
+                Sommarjobbat under sommaren 2017 och 2018 samt extrajobbat under hösten. Har utfört serveringsarbete med
+                nära kundkontakt,
                 kassatjänst och hanterat bokningar per telefon. Utvecklade god förmåga av kundtjänst, med nära kontakt
                 med kunden, samt övat förmågan av stresstålighet.
 
@@ -102,11 +115,11 @@
                     Tibble Gymnasium, Ekonomisk inriktning
                 </p>
             </div>
-           
+
             <h2 class="text-lg">
                 Kunskaper och Meriter
             </h2>
-          
+
 
             <ul class="text-white cv-ul text-md mb-5">
                 <li>
@@ -128,7 +141,7 @@
                     Grundläggande förståelse inom HTML, CSS, JavaScript, PHP, MySql och FTP
                 </li>
                 <li>
-                Publicerat egen hemsida
+                    Publicerat egen hemsida
                 </li>
             </ul>
             <h2 class="text-lg">
@@ -142,7 +155,9 @@
                 webbutveckling.
                 Jag har utbildat mig självmant och följt online videokurser på, bland annat, hemsidan
                 Skillshare.
-                I nuläget studerar jag på Yrkeshögskola för att bli Fullstack webbutvecklare, med fokus på både front- och backend. Efter avslutad utbildning hoppas jag att jag kan hitta ett relevant arbete där jag kan få användning av mina färdigheter
+                I nuläget studerar jag på Yrkeshögskola för att bli Fullstack webbutvecklare, med fokus på både front-
+                och backend. Efter avslutad utbildning hoppas jag att jag kan hitta ett relevant arbete där jag kan få
+                användning av mina färdigheter
 
             </p>
 
