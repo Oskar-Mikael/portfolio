@@ -185,7 +185,7 @@ nav>ul>li:hover {
 
 .project-img-bottom-text {
     position: absolute;
-    color: white;
+    color: rgb(0, 0, 0);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -220,17 +220,16 @@ nav>ul>li:hover {
     cursor: pointer;
 }
 
-
 .relative {
     position: relative;
 }
 
 .project-button {
     margin:1rem;
-    background-color: gray;
-    border: none;
+    background-color: rgb(233, 233, 233) ;
+    border: 1px solid rgb(42, 148, 137);
     padding: 0.6rem;
-    color: white;
+    color: rgb(42, 148, 137);
     font-weight: bold;
     font-size: 1rem;
     border-radius: 5px;
