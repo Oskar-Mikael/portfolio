@@ -50,7 +50,7 @@ header>h2 {
 
 nav {
     min-height: 3.5rem;
-    background-color: rgba(64, 68, 68, 0.8);
+    background-color: rgba(64, 68, 68, 0.95);
     position: fixed;
     top: 0;
     width: 100%;
@@ -300,6 +300,11 @@ nav>ul>li:hover {
     max-height: 400px;
     max-width: 90%
 
+}
+
+.favicon {
+    width: 4%;
+    height: 60px;
 }
 
 @media only screen and (max-width: 1139px) {
