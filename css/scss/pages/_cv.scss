@@ -7,3 +7,16 @@
 .cv-ul {
     list-style-type: none;
 }
+
+.cv-contact {
+    display: block;
+}
+
+
+@media only screen and (max-width:425px) {
+    .cv-contact {
+        font-size: 1.2rem;
+    }
+        
+    
+}
