@@ -13,7 +13,7 @@ body {
 
 header {
     min-height: 3rem;
-    background: rgb(48, 180, 167);
+    background: $base-green-color;
 }
 
 header>h1 {
@@ -227,9 +227,9 @@ nav>ul>li:hover {
 .project-button {
     margin: 1rem;
     background-color: rgb(233, 233, 233);
-    border: 1px solid rgb(42, 148, 137);
+    border: 1px solid $base-green-color;
     padding: 0.6rem;
-    color: rgb(42, 148, 137);
+    color: $base-green-color;
     font-weight: bold;
     font-size: 1rem;
     border-radius: 5px;
@@ -237,7 +237,7 @@ nav>ul>li:hover {
 }
 
 .project-header {
-    background-color: rgb(42, 148, 137);
+    background-color: $base-green-color;
     padding: 1rem;
 
 }
@@ -247,7 +247,7 @@ nav>ul>li:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "box-cafe  box-redesign"
         "box-hangman  box-todo"
-        "box-first box-first";
+        "box-laravel box-first";
     column-gap: 1rem;
     text-align: center;
 }
@@ -293,6 +293,14 @@ nav>ul>li:hover {
     border-radius: 3px;
 }
 
+.box-laravel {
+    grid-area: box-laravel;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    padding: 1rem;
+    border-radius: 3px;
+}
+
 .hero-img {
     display: flex;
     margin: 0 auto;
@@ -315,7 +323,7 @@ nav>ul>li:hover {
     display: none;
     opacity: 0;
     position: absolute;
-    background-color: rgba(64, 68, 68, 0.95);
+    background-color: rgba(73, 77, 77, 0.95);
     top: 3.8rem;
     right: -1.5rem;
     padding: 2rem 1rem;
@@ -364,6 +372,7 @@ footer {
             "box-redesign"
             "box-hangman"
             "box-todo"
+            "box-laravel"
             "box-first";
     }
 
