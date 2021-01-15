@@ -72,29 +72,17 @@ textarea {
 .form-row {
     display: flex;
 }
-input[type="submit"] {
-    background-color: #30BAE7;
-    border: none;
-    border-radius: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 30px;
-    cursor: pointer;
 
-}
 
 button[type="submit"] {
     display: flex;
+    color: $base-green-color;
     margin: 0 auto;
     cursor: pointer;
-    border: 2px solid black;
+    border: 2px solid $base-green-color;;
     padding: 0.5rem 1rem;
     font-size: 2rem;
     font-weight: bold;
-    background-color: aqua;
     border-radius: 5px;
 }
 
