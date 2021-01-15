@@ -328,6 +328,31 @@ nav>ul>li:hover {
     
 }
 
+footer {
+    min-height: 250px;
+    background-color: rgb(29, 29, 29);
+}
+
+.footer-ul {
+    float:right;
+    list-style-type: none;
+    text-align: center;
+    
+}
+
+.footer-ul>li {
+    padding-top: 0.5rem;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+.footer-img {
+   float:left;
+    
+}
+
 @media only screen and (max-width: 1139px) {
     .container {
         margin: 2rem;
@@ -375,5 +400,18 @@ nav>ul>li:hover {
     .favicon {
         max-width: 10%;
         height: 60px;
+    }
+
+    footer .container {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .footer-ul {
+        float: unset;
+    }
+
+    .footer-img {
+        float: unset
     }
 }
