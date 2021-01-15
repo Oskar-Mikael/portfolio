@@ -313,16 +313,19 @@ nav>ul>li:hover {
 
 .dropdown-content {
     display: none;
+    opacity: 0;
     position: absolute;
     background-color: rgba(64, 68, 68, 0.95);
     top: 3.8rem;
     right: -1.5rem;
     padding: 2rem 1rem;
-
+    transition: 0.3ms all;
 }
 
 .dropdown:hover .dropdown-content {
+    opacity: 1;
     display: block;
+    
 }
 
 @media only screen and (max-width: 1139px) {
