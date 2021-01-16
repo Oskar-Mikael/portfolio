@@ -1,5 +1,11 @@
 $base-green-color:  rgb(48, 180, 167);
 
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
@@ -9,6 +15,10 @@ a {
 
 .text-white {
     color: white;
+}
+
+.text-gray {
+	color: rgb(161, 161, 161);
 }
 
 .text-center {
