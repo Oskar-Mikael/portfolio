@@ -14,32 +14,40 @@
     <body>
         <nav id="navbar">
             <a href="/index.html">
-            <img src="/assets/favicon.png" class="favicon">
+                <img src="/assets/favicon.png" class="favicon">
             </a>
-            <button id="hamburger"></button>
+            <div id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul id="menu">
-                <li>
+                <li class="active">
                     <a href="/index.html">
                         Home
                     </a>
                 </li>
                 <li class="dropdown">
-                   
-                        CV
+        
+                    CV
                     <div class="dropdown-content text-sm text-white">
-                        <a href="/pages/cv.html"><p class="mb-1">Swedish</p></a>
-                        <a href="/pages/cv-en.html"><p>English</p></a>
+                        <a href="/pages/cv.html">
+                            <p class="mb-1">Swedish</p>
+                        </a>
+                        <a href="/pages/cv-en.html">
+                            <p>English</p>
+                        </a>
                     </div>
-                
-            </li>
-                <li class="active"><a href="/pages/contact.html">
+        
+                </li>
+                <li><a href="/pages/contact.html">
                         Contact
                     </a></li>
                 <li><a href="#">
                         Blog
                     </a></li>
             </ul>
-
         </nav>
         <main class="container contact mb-3">
 
