@@ -35,139 +35,12 @@ header>h2 {
     padding-bottom: 1rem;
 }
 
-.container {
-    max-width: 1140px;
-    margin: 0 auto;
-
-}
-
 .img {
     background-image: url("../assets/Up1AiL5.jpg");
     width: 100%;
     height: 400px;
     background-position-y: -650px;
 }
-
-nav {
-    min-height: 3.5rem;
-    background-color: rgba(64, 68, 68, 0.95);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-    transition-property: height;
-    transition-duration: .5s;
-    transition-timing-function: cubic-bezier(0,1,.5,1);
-}
-
-nav>ul {
-    float: right;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 1rem;
-}
-
-nav>ul>li {
-    display: flex;
-    color: white;
-    padding: 1rem;
-    font-size: 1.2rem;
-    margin: 0.06rem;
-    transition: 0.3s all;
-}
-
-nav>ul>li.active {
-    background-color: gray;
-}
-
-nav>ul>li:hover {
-    background-color: gray;
-
-}
-
-#menu {
-    transition-property: height;
-    transition-duration: .5s;
-    transition-timing-function: cubic-bezier(0,1,.5,1);
-}
-
-#hamburger {
-    display: none;
-    width: 50px;
-    height: 20px;
-    float: right;
-    margin: 1rem;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-    cursor: pointer;
-}
-
-#hamburger span {
-    display: block;
-    position: absolute;
-    height: 9px;
-    width: 100%;
-    background: #000000;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
-}
-
-
-#hamburger span:nth-child(1) {
-    top: 0px;
-}
-
-#hamburger span:nth-child(2),
-#hamburger span:nth-child(3) {
-    top: 18px;
-}
-
-#hamburger span:nth-child(4) {
-    top: 36px;
-}
-
-#hamburger.open span:nth-child(1) {
-    top: 18px;
-    width: 0%;
-    left: 50%;
-}
-
-#hamburger.open span:nth-child(2) {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-#hamburger.open span:nth-child(3) {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-
-#hamburger.open span:nth-child(4) {
-    top: 18px;
-    width: 0%;
-    left: 50%;
-}
-
 
 .grid {
     display: grid;
@@ -338,7 +211,6 @@ nav>ul>li:hover {
 }
 
 .box-hangman {
-    position: relative;
     grid-area: box-hangman;
     width: 100%;
     background-color: rgb(233, 233, 233);
@@ -383,50 +255,6 @@ nav>ul>li:hover {
     height: 60px;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    opacity: 0;
-    position: absolute;
-    background-color: rgba(73, 77, 77, 0.95);
-    top: 3.8rem;
-    right: -1.5rem;
-    padding: 2rem 1rem;
-    transition: all 0.3s;
-}
-
-.dropdown:hover .dropdown-content {
-    opacity: 1;
-    transition: all 0.3s;
-}
-
-footer {
-    min-height: 250px;
-    background-color: rgb(29, 29, 29);
-}
-
-.footer-ul {
-    float: right;
-    list-style-type: none;
-    text-align: center;
-
-}
-
-.footer-ul>li {
-    padding-top: 0.5rem;
-}
-
-.footer-info {
-    text-align: center;
-}
-
-.footer-img {
-    float: left;
-
-}
 
 @media only screen and (max-width: 1139px) {
     .container {
@@ -458,40 +286,8 @@ footer {
             "box-3";
     }
 
-    nav>ul {
-        height: 0;
-        opacity: 0;
-        float: none;
-        margin: 1rem 0;
-    }
-
-    nav>ul.show {
-        opacity: 1;
-        display: flex;
-        flex-direction: column;
-        height: 15rem;
-        transition: .25s all;
-    }
-
-    #hamburger {
-        display: block;
-    }
-
     .favicon {
         max-width: 10%;
         height: 60px;
-    }
-
-    footer .container {
-        display: inline-block;
-        text-align: center;
-    }
-
-    .footer-ul {
-        float: unset;
-    }
-
-    .footer-img {
-        float: unset
     }
 }
