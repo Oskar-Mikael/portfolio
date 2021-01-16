@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="/assets/favicon.png"/>
+        <link rel="icon" type="image/png" href="/assets/favicon.png" />
         <title>Home - Oskar Boström</title>
         <link rel="stylesheet" href="css/style.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap"
@@ -14,9 +14,14 @@
     <body>
         <nav id="navbar">
             <a href="/index.html">
-            <img src="assets/favicon.png" class="favicon">
+                <img src="assets/favicon.png" class="favicon">
             </a>
-            <button id="hamburger"></button>
+            <div id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul id="menu">
                 <li class="active">
                     <a href="/index.html">
@@ -24,14 +29,18 @@
                     </a>
                 </li>
                 <li class="dropdown">
-                   
-                        CV
+
+                    CV
                     <div class="dropdown-content text-sm text-white">
-                        <a href="/pages/cv.html"><p class="mb-1">Swedish</p></a>
-                        <a href="/pages/cv-en.html"><p>English</p></a>
+                        <a href="/pages/cv.html">
+                            <p class="mb-1">Swedish</p>
+                        </a>
+                        <a href="/pages/cv-en.html">
+                            <p>English</p>
+                        </a>
                     </div>
-                
-            </li>
+
+                </li>
                 <li><a href="/pages/contact.html">
                         Contact
                     </a></li>
@@ -39,7 +48,6 @@
                         Blog
                     </a></li>
             </ul>
-
         </nav>
         <div class="img">
         </div>
@@ -51,7 +59,7 @@
                 Upcoming Fullstack Web Developer
             </h2>
         </header>
-        
+
         <div class="grid container">
             <div class="box-1">
                 <h2 class="box-h">
@@ -111,7 +119,8 @@
                         </h3>
                     </a>
                 </div><br>
-                <a href="https://github.com/chas-academy/u01-static-website-Oskar-Mikael" target="_blank"><button class="project-button">Github</button></a>
+                <a href="https://github.com/chas-academy/u01-static-website-Oskar-Mikael" target="_blank"><button
+                        class="project-button">Github</button></a>
                 <a href="pages/projects/cafe.html"><button class="project-button">Read more</button></a>
 
             </div>
@@ -172,16 +181,15 @@
                     Upcoming Laravel project
                 </h3>
                 <div class="relative">
-                    <a href="#" target="_blank"><img src="/assets/laravel-img.png"
-                            alt="hangman-website" class="project-img" />
+                    <a href="#" target="_blank"><img src="/assets/laravel-img.png" alt="hangman-website"
+                            class="project-img" />
                         <h3 class="project-img-text">
                             Website currently unavailable
                         </h3>
                     </a>
                 </div>
                 <br>
-                <a href="#" target="_blank"><button
-                        class="project-button">Github</button></a>
+                <a href="#" target="_blank"><button class="project-button">Github</button></a>
                 <a href="/pages/projects/laravel.html"><button class="project-button">Read more</button></a>
             </div>
             <div class="box-first mb-4">
@@ -216,7 +224,7 @@
                         </a>
                     </li>
                     <li>
-                        <a  href="https://www.instagram.com/ogge_bstrom/" target="_blank">
+                        <a href="https://www.instagram.com/ogge_bstrom/" target="_blank">
                             Instagram
                         </a>
                     </li>
@@ -226,22 +234,22 @@
                         </a>
                     </li>
                 </ul>
-                
+
                 <img src="/assets/favicon.png" class="footer-img pt-2">
                 <div class="footer-info">
-                <h2 class="pt-3 mb-1 text-lg text-white ">
-                    Oskar Boström
-                </h2>
-                <p class="text-white text-sm">
-                    A portfolio and personal website
-                </p>
-                <p class="text-white text-sm">
-                    For more information, please contact me
-                </p>
-                <p class="mt-1 text-white">
-                    &copy; 2021 - Oskar Boström
-                </p>
-            </div>
+                    <h2 class="pt-3 mb-1 text-lg text-white ">
+                        Oskar Boström
+                    </h2>
+                    <p class="text-white text-sm">
+                        A portfolio and personal website
+                    </p>
+                    <p class="text-white text-sm">
+                        For more information, please contact me
+                    </p>
+                    <p class="mt-1 text-white">
+                        &copy; 2021 - Oskar Boström
+                    </p>
+                </div>
             </section>
         </footer>
         <script src="/js/script.js"></script>
