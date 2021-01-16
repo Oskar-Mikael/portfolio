@@ -1,0 +1,26 @@
+.blog>article:nth-child(even) {
+    background-color: rgb(248, 248, 248);
+}
+
+.blog>article:nth-child(odd) {
+    background-color: rgb(233, 233, 233);
+}
+
+.blog-post {
+    width: 90%;
+    background-color: rgb(233, 233, 233);
+    padding: 4rem 10rem;
+    border-radius: 3px;
+    margin: 0 auto
+}
+
+.blog-button {
+    background-color: inherit;
+    border: 1px solid $base-green-color;
+    padding: 0.6rem;
+    color: $base-green-color;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
