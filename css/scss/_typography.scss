@@ -101,3 +101,9 @@ a {
 		padding-left: #{$i}rem !important;
 	}
 }
+
+@media only screen and (max-width: 1139px) {
+.container {
+	margin: 2rem 2rem 0 2rem;
+}
+}
