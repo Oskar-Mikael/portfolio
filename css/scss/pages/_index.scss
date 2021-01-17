@@ -250,12 +250,6 @@ header>h2 {
     max-width: 90%
 }
 
-.favicon {
-    max-width: 4%;
-    height: 60px;
-}
-
-
 @media only screen and (max-width: 1139px) {
     .projects {
         grid-template-columns: 1fr;
@@ -280,8 +274,13 @@ header>h2 {
             "box-3";
     }
 
-    .favicon {
-        max-width: 10%;
-        height: 60px;
+    .img {
+        background-position-x: -500px;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    header>h1 {
+        line-height: 4rem;
     }
 }
