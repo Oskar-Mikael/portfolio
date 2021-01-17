@@ -11,6 +11,14 @@ footer {
     padding-top: 0.5rem;
 }
 
+.footer-ul>li>a {
+    transition: 0.3s all;
+}
+
+.footer-ul>li>a:hover {
+    color: rgb(155, 155, 155)
+}
+
 .footer-img {
     float: right;
     padding-top: 8rem;
