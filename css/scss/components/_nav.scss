@@ -137,6 +137,12 @@ nav>ul>li:hover {
     transition: all 0.3s;
 }
 
+.favicon {
+    min-width: 4%;
+    height: 60px;
+}
+
+
 @media only screen and (max-width:768px) {
     nav>ul {
         height: 0;
@@ -156,4 +162,6 @@ nav>ul>li:hover {
     #hamburger {
         display: block;
     }
+
+   
 }
