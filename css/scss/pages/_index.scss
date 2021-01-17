@@ -257,10 +257,6 @@ header>h2 {
 
 
 @media only screen and (max-width: 1139px) {
-    .container {
-        margin: 2rem;
-    }
-
     .projects {
         grid-template-columns: 1fr;
         grid-template-areas: "box-cafe"
@@ -274,8 +270,6 @@ header>h2 {
     .project-header {
         text-align: center;
     }
-
-
 }
 
 @media only screen and (max-width:768px) {
