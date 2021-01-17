@@ -4,37 +4,40 @@ footer {
 }
 
 .footer-ul {
-    float: right;
     list-style-type: none;
-    text-align: center;
-
 }
 
 .footer-ul>li {
     padding-top: 0.5rem;
 }
 
-.footer-info {
-    text-align: center;
-}
-
 .footer-img {
-    float: left;
-
+    float: right;
+    padding-top: 8rem;
 }
+
+
 
 @media only screen and (max-width:768px) {
 
     footer .container {
-        display: inline-block;
+        text-align: center;
+    }
+
+    .footer-info {
         text-align: center;
     }
 
     .footer-ul {
-        float: unset;
+        text-align: center;
     }
 
     .footer-img {
-        float: unset
-    }    
+        float: unset;
+        padding-top: 2rem;
+    }
+
+    .footer-img.mt-2 {
+        display: block;
+    }
 }
