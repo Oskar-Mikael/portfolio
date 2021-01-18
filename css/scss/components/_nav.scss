@@ -146,10 +146,8 @@ nav>ul>li:hover {
 @media only screen and (max-width:768px) {
     nav>ul {
         height: 0;
-        display: none;
         opacity: 0;
         float: none;
-        
     }
 
     nav>ul.show {
