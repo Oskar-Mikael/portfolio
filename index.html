@@ -7,8 +7,8 @@
         <link rel="icon" type="image/png" href="/assets/favicon.png" />
         <title>Home - Oskar Boström</title>
         <link rel="stylesheet" href="css/style.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap"
-            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap" rel="stylesheet">
+        
     </head>
 
     <body>
@@ -16,6 +16,7 @@
             <a href="/index.html">
                 <img src="assets/favicon.png" class="favicon">
             </a>
+            
             <div id="hamburger">
                 <span></span>
                 <span></span>
@@ -50,17 +51,20 @@
             </ul>
         </nav>
         <div class="img">
+            <header id="top" class="container mb-3">
+                <h1>
+                    Oskar Boström
+                </h1>
+                <h2 class="mb-1">
+                    Upcoming Fullstack Web Developer
+                </h2>
+                <a onclick="smoothScroll()" class="header-button text-md text-white">See my projects</a>
+            </header>
         </div>
         <main>
-        <header class="mb-3">
-            <h1>
-                Oskar Boström
-            </h1>
-            <h2>
-                Upcoming Fullstack Web Developer
-            </h2>
-        </header>
-        <div class="grid container">
+      
+        <div class="container grid">
+       
             <article class="box-1">
                 <h2 class="box-h">
                     Who am I?
@@ -77,7 +81,7 @@
                     My interests
                 </h2>
                 <p class="box-p">
-                    In terms of web development, I am most interested in the backend. I enjoy working with databases,
+                    In terms of web development, I am most interested in the backend. I enjoy working with PHP and Laravel, databases,
                     MVC applications, APIs, and webserver development. This is what I would preferably become an expert
                     in, while having frontend development as a secondary skill, but still enough to be able to operate
                     as a fullstack developer.
@@ -97,7 +101,8 @@
         <div class="container mb-3">
             <img src="assets/hero-img.jpg" alt="hero-img" class="hero-img" />
         </div>
-        <article class="project-header mb-5">
+        <button onclick="scrollToTop()" id="scroll-top"><img alt="up-arrow" id="arrow-img" src="/assets/up-arrow.png"> </button>
+        <article id="projects" class="project-header mb-5">
             <div class="container">
             <h2 class="text-white text-lg pt-1">
                 Projects
