@@ -11,35 +11,38 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-header {
-    min-height: 3rem;
-    background: $base-green-color;
-}
 
 header>h1 {
+    padding-top: 15rem;
     color: rgb(255, 255, 255);
     font-size: 4rem;
     font-weight: bold;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 header>h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    color:rgb(136, 136, 136);
     text-decoration: underline;
     padding-bottom: 1rem;
 }
 
+.header-button {
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: $base-green-color;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.header-button:hover {
+    font-size: 2rem;
+}
+
 .img {
-    background-image: url("../assets/Up1AiL5.jpg");
+    background-image: url("../assets/desktop-setup.jpg");
     width: 100%;
-    height: 400px;
-    background-position-y: -650px;
+    height: 600px;
+    background-position-y: -350px;
+    border-bottom: 8px solid black;
 }
 
 .grid {
@@ -56,21 +59,21 @@ header>h2 {
 
 .box-1 {
     grid-area: box-1;
-    background-color: rgb(218, 127, 127);
+    background-color: rgb(196, 153, 153);
     min-height: 20rem;
     border-radius: 10px;
     min-width: 15rem;
 }
 
 .box-2 {
-    background-color: rgb(230, 183, 113);
+    background-color: rgb(238, 204, 153);
     grid-area: box-2;
     min-height: 20rem;
     border-radius: 10px;
 }
 
 .box-3 {
-    background-color: rgb(186, 233, 93);
+    background-color: rgb(199, 230, 138);
     grid-area: box-3;
     min-height: 20rem;
     border-radius: 10px;
@@ -175,6 +178,7 @@ header>h2 {
     font-weight: bold;
     font-size: 1rem;
     border-radius: 5px;
+    outline: none; 
     cursor: pointer;
 }
 
@@ -248,6 +252,33 @@ header>h2 {
     border: 5px solid black;
     max-height: 400px;
     max-width: 90%
+}
+
+#scroll-top {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: -100px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: rgb(151, 151, 151);
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem; 
+    border-radius: 10px;
+    transition: 1s right;
+    
+}
+
+#scroll-top:hover {
+    background-color: rgb(192, 192, 192);
+    transition: 0.3s background-color;
+}
+
+#arrow-img {
+    max-width: 70%;
+    height: 50px;
 }
 
 @media only screen and (max-width: 1139px) {
