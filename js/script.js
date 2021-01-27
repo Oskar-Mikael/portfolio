@@ -1,29 +1,36 @@
-const hamburger = document.querySelector("#hamburger");
-const navul = document.querySelector("#menu");
+const hamburger = $('#hamburger');
+const navul = $('#menu');
 
-hamburger.addEventListener("click", () => {
-    navul.classList.toggle("show");
-    hamburger.classList.toggle('open')
-});
+hamburger.on('click', function() {
+    navul.toggleClass("show")
+    hamburger.toggleClass('open')
+})
 
-function smoothScroll(){
-    document.querySelector('#projects').scrollIntoView({
-        behavior: 'smooth'
-    });
-}
+$('.header-button').on('click', function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $('#projects').offset().top
+    }, 800)
+})
 
 window.onscroll = function() {displayScrollButton()};
 
 function displayScrollButton() {
     if(document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500){
-        document.querySelector("#scroll-top").style.right = "10px";
+        $('#scroll-top').css('right', '10px')
     } else {
-        document.querySelector("#scroll-top").style.right = "-100px";
+        $('#scroll-top').css('right', '-100px')
     }
 }
 
-function scrollToTop() {
-    document.querySelector('#top').scrollIntoView({
-        behavior: 'smooth'
-    });
-}
+$('#scroll-top').on('click', function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $('#top').offset().top
+    }, 800)
+})
+
+$('.dropdown').hover(function() {
+    $('.dropdown-content').hide().slideToggle(300);
+}, function() {
+    $('.dropdown-content').show().slideToggle(300);
+})
+
