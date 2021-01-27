@@ -120,6 +120,7 @@ nav>ul>li:hover {
 .dropdown {
     position: relative;
     display: inline-block;
+    list-style-type: none;
 }
 
 .dropdown-content {
@@ -129,13 +130,9 @@ nav>ul>li:hover {
     top: 3.8rem;
     right: -1.5rem;
     padding: 2rem 1rem;
-    transition: all 0.3s;
+    list-style-type: none;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-    transition: all 0.3s;
-}
 
 .favicon {
     min-width: 4%;
