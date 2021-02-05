@@ -14,11 +14,11 @@ $('.header-button').on('click', () => {
     }, 800)
 })
 
-window.onscroll = () => {displayScrollButton()};
+window.onscroll = () => { displayScrollButton() };
 
 //Function for hiding and showing scroll-top button
 function displayScrollButton() {
-    if(document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500){
+    if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
         $('#scroll-top').css('right', '10px')
     } else {
         $('#scroll-top').css('right', '-100px')
@@ -33,9 +33,14 @@ $('#scroll-top').on('click', () => {
 })
 
 //Function for toggling CV dropdown menu
-$('.dropdown').hover( () => {
+$('.dropdown').hover(() => {
     $('.dropdown-content').hide().slideToggle(300);
 }, () => {
     $('.dropdown-content').show().slideToggle(300);
+})
+
+//Function for contact form AJAX
+$('.contact-form').on('click', (e) => {
+    e.preventDefault();
 })
 
