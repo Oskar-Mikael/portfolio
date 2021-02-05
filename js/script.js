@@ -39,8 +39,3 @@ $('.dropdown').hover(() => {
     $('.dropdown-content').show().slideToggle(300);
 })
 
-//Function for contact form AJAX
-$('.contact-form').on('click', (e) => {
-    e.preventDefault();
-})
-
