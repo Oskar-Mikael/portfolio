@@ -40,8 +40,6 @@ $('.dropdown').hover(() => {
 })
 
 //Function for contact form AJAX
-$('.contact-form').submit( (e) => {
-    e.preventDefault();
+$('.contact-form').submit( () => {
     alert('Your message has been sent, thank you!')
 })
-
