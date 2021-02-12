@@ -33,13 +33,34 @@ $('#scroll-top').on('click', () => {
 })
 
 //Function for toggling CV dropdown menu
-$('.dropdown').hover(() => {
-    $('.dropdown-content').hide().slideToggle(300);
-}, () => {
-    $('.dropdown-content').show().slideToggle(300);
+$('.dropdown').on('click', () => {
+    if ($('.dropdown-content').css('display') == 'none') {
+
+        $('.dropdown-content').hide().slideToggle(300);
+
+    } else {
+
+        $('.dropdown-content').show().slideToggle(300);
+    }
 })
 
+$(document).click( () => {
+    $('.dropdown-content').hide().slideUp(300);
+})
+
+$('.dropdown').click( (e) => {
+    e.stopPropagation();
+})
+
+// $(document).click((e) => {
+//     if ($('.dropdown') !== e.target && !$('.dropdown').has(e.target).length) {
+//         $('.dropdown-content').hide().slideUp(300);
+//     }
+// })
+
+
+
 //Function for contact form AJAX
-$('.contact-form').submit( () => {
+$('.contact-form').submit(() => {
     alert('Your message has been sent, thank you!')
 })
