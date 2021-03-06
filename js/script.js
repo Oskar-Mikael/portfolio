@@ -62,7 +62,6 @@ $('.dropdown').click( (e) => {
 // })
 
 
-
 //Function for contact form AJAX
 $('.contact-form').submit(() => {
     alert('Your message has been sent, thank you!')
