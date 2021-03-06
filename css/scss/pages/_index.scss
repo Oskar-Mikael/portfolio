@@ -20,7 +20,7 @@ header>h1 {
 }
 
 header>h2 {
-    color:rgb(136, 136, 136);
+    color: rgb(136, 136, 136);
     text-decoration: underline;
     padding-bottom: 1rem;
 }
@@ -121,57 +121,6 @@ header>h2 {
     margin-top: 0.5rem;
 }
 
-.project-img-text {
-    position: absolute;
-    color: rgb(0, 0, 0);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: 0.2s all;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 1.5rem;
-}
-
-.project-img-bottom-text {
-    position: absolute;
-    color: rgb(0, 0, 0);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: 0.2s all;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 1.5rem;
-}
-
-
-.project-img:hover {
-    opacity: 0.2;
-    cursor: pointer;
-    transform: scale(1.03);
-}
-
-.project-img-bottom:hover {
-    opacity: 0.2;
-    cursor: pointer;
-}
-
-.project-img:hover+.project-img-text {
-    opacity: 1;
-}
-
-.project-img-bottom:hover+.project-img-bottom-text {
-    opacity: 1;
-}
-
-.project-img-text:hover+.project-img {
-    opacity: 0.2;
-    cursor: pointer;
-}
-
 .relative {
     position: relative;
 }
@@ -185,7 +134,7 @@ header>h2 {
     font-weight: bold;
     font-size: 1rem;
     border-radius: 5px;
-    outline: none; 
+    outline: none;
     cursor: pointer;
     text-decoration: underline;
     transition: 0.3s all;
@@ -216,6 +165,14 @@ header>h2 {
     background-color: rgb(233, 233, 233);
     padding: 1rem;
     border-radius: 3px;
+    -webkit-box-shadow: 1px -1px 26px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px -1px 26px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px -1px 26px -8px rgba(0, 0, 0, 0.75);
+    transition: 0.3s all;
+}
+
+.project-box:hover {
+    box-shadow: none;
 }
 
 .hero-img {
@@ -227,20 +184,20 @@ header>h2 {
 }
 
 #scroll-top {
-    display: block; 
-    position: fixed; 
-    bottom: 20px; 
-    right: -100px; 
-    z-index: 99; 
-    border: none; 
-    outline: none; 
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: -100px;
+    z-index: 99;
+    border: none;
+    outline: none;
     background-color: rgb(151, 151, 151);
     color: white;
     cursor: pointer;
-    padding: 0.5rem; 
+    padding: 0.5rem;
     border-radius: 10px;
     transition: 1s right;
-    
+
 }
 
 #scroll-top:hover {
@@ -256,7 +213,7 @@ header>h2 {
 @media only screen and (max-width: 1139px) {
     .projects {
         grid-template-columns: 1fr;
-        grid-template-areas: 
+        grid-template-areas:
             "."
             "."
             "."
