@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="/assets/favicon.png" />
+        <title>Laravel Todo - Oskar Boström</title>
+        <link rel="stylesheet" href="/css/style.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap"
+            rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176958263-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-176958263-1');
+        </script>
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <a href="/">
+                <img src="/assets/favicon.png" class="favicon">
+            </a>
+            <div id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="menu">
+                <li>
+                    <a href="/">
+                        Home
+                    </a>
+                </li>
+                <li class="dropdown">
+
+                    CV
+                    <img class="dropdown-arrow" src="/assets/arrow-point-to-down.png" />
+                    <div class="dropdown-content text-sm text-white">
+                        <a href="/pages/cv.html">
+                            <p class="mb-1">Swedish</p>
+                        </a>
+                        <a href="/pages/cv-en.html">
+                            <p>English</p>
+                        </a>
+                    </div>
+
+                </li>
+                <li><a href="/pages/contact.html">
+                        Contact
+                    </a></li>
+                <li><a href="/pages/blog.html">
+                        Blog
+                    </a></li>
+            </ul>
+        </nav>
+        <main class="container mb-3">
+            <h1 class="mt-5 mb-3">
+                Vue Movie Database
+            </h1>
+            <p class="text-md mb-3">
+                This is a hobby project that I created in anticipation for the bigger movie database project that I was going to create in Laravel. Vue is my favorite Javascript Framework, as I think it's fun and easy to work with, and it offers a great structure for creating SPAs (Single Page Applications), so I chose to make this app in that Framework, to further sharpen my skills in it.
+            </p>
+         
+            <img src="/assets/vue-app.png" alt="laravel-todo-website" class="cafe-img mb-3" />
+
+        </main>
+        <footer>
+            <section class="container">
+                <img src="/assets/favicon.png" class="footer-img" />
+                <div class="footer-info">
+                    <h2 class="pt-3 mb-1 text-lg text-white ">
+                        Oskar Boström
+                    </h2>
+                    <p class="text-white text-sm">
+                        A portfolio and personal website
+                    </p>
+                    <p class="text-white text-sm">
+                        For more information, please contact me
+                    </p>
+                    <p class="mt-1 text-white">
+                        &copy; 2021 - Oskar Boström
+                    </p>
+                </div>
+                <ul class="footer-ul mt-3 pb-3 text-white text-sm">
+                    <li>
+                        <a href="mailto:oskar.m.bostrom@gmail.com">
+                            Email
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/oskar-bostr%C3%B6m-6462b81b5/" target="_blank">
+                            Linkedin
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/ogge_bstrom/" target="_blank">
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/oskar-mikael" target="_blank">
+                            Github
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </footer>
+        <script src="/js/script.js"></script>
+    </body>
+
+</html>
