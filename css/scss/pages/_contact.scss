@@ -42,10 +42,13 @@
 }
 
 .contact-form {
-   margin: 0 auto;
+    margin: 0 auto;
 
 }
-input[type="text"], input[type="email"], textarea {
+
+input[type="text"],
+input[type="email"],
+textarea {
     color: white;
     background-color: #b6b6b6;
     border: none;
@@ -55,20 +58,26 @@ input[type="text"], input[type="email"], textarea {
     padding-left: 15px;
 
 }
-input[type="text"]::placeholder, input[type="email"]::placeholder,textarea::placeholder {
-    color:gray
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+    color: gray
 }
-input[type="text"], input[type="email"] {
+
+input[type="text"],
+input[type="email"] {
     width: 50%;
     height: 56px;
-    display: flex;
 }
+
 textarea {
     height: 200px;
-    width: 97.4%;
+    width: 100%;
     padding-top: 25px;
     resize: none;
 }
+
 .form-row {
     display: flex;
 }
@@ -79,11 +88,24 @@ button[type="submit"] {
     color: $base-green-color;
     margin: 0 auto;
     cursor: pointer;
-    border: 2px solid $base-green-color;;
+    border: 2px solid $base-green-color;
     padding: 0.5rem 1rem;
     font-size: 2rem;
     font-weight: bold;
     border-radius: 5px;
+}
+
+@media only screen and (max-width:768px) {
+
+    .form-row {
+        display: inline-block;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        padding-left: 15px;
+    }
 }
 
 @media only screen and (max-width:425px) {
@@ -94,9 +116,4 @@ button[type="submit"] {
             "instagram"
             "github";
     }
-
-    input[type="text"], input[type="email"] {
-        width: 100%;
-    }
-
 }
