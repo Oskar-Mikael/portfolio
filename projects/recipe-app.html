@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="/assets/favicon.png" />
+        <title>Angular Recipe App - Oskar Boström</title>
+        <link rel="stylesheet" href="/css/style.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap"
+            rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176958263-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-176958263-1');
+        </script>
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <a href="/">
+                <img src="/assets/favicon.png" class="favicon">
+            </a>
+            <div id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="menu">
+                <li>
+                    <a href="/">
+                        Home
+                    </a>
+                </li>
+                <li class="dropdown">
+
+                    CV
+                    <img class="dropdown-arrow" src="/assets/arrow-point-to-down.png" />
+                    <div class="dropdown-content text-sm text-white">
+                        <a href="/pages/cv.html">
+                            <p class="mb-1">Swedish</p>
+                        </a>
+                        <a href="/pages/cv-en.html">
+                            <p>English</p>
+                        </a>
+                    </div>
+
+                </li>
+                <li><a href="/pages/contact.html">
+                        Contact
+                    </a></li>
+                <li><a href="/pages/blog.html">
+                        Blog
+                    </a></li>
+            </ul>
+        </nav>
+        <main class="container mb-3">
+            <h1 class="mt-5 mb-3">
+                Anguar Recipe App
+            </h1>
+            <p class="text-md mb-1">
+                This project combined two frameworks, one that I love and one that I don't love. I love Laravel, and I really don't like Angular. The first half of this school project was to create a Recipe app frontend in Angular, where users look through recipes and save them to a list. After that was done, we were given a new task to build an API in Laravel to implement into the frontend. With the API, the user is now able to login, using authentication via Laravel Sanctum, and create multiple lists and save recipes to them.
+            </p>
+            <p class="text-md mb-1">
+                Working with API is something I've always enjoyed, and now for the first time creating my own was even more fun.
+            </p>
+            <p class="text-md mb-3">
+                You can view the application <a style="color:blue" href="https://goofy-kirch-7d24c9.netlify.app/"
+                    target="_blank">here</a>
+            </p>
+
+            <img src="/assets/recipe-website.png" alt="recipe-website" class="cafe-img mb-3" />
+
+        </main>
+        <footer>
+            <section class="container">
+                <img src="/assets/favicon.png" class="footer-img" />
+                <div class="footer-info">
+                    <h2 class="pt-3 mb-1 text-lg text-white ">
+                        Oskar Boström
+                    </h2>
+                    <p class="text-white text-sm">
+                        A portfolio and personal website
+                    </p>
+                    <p class="text-white text-sm">
+                        For more information, please contact me
+                    </p>
+                    <p class="mt-1 text-white">
+                        &copy; 2021 - Oskar Boström
+                    </p>
+                </div>
+                <ul class="footer-ul mt-3 pb-3 text-white text-sm">
+                    <li>
+                        <a href="mailto:oskar.m.bostrom@gmail.com">
+                            Email
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/oskar-bostr%C3%B6m-6462b81b5/" target="_blank">
+                            Linkedin
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/ogge_bstrom/" target="_blank">
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/oskar-mikael" target="_blank">
+                            Github
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </footer>
+        <script src="/js/script.js"></script>
+    </body>
+
+</html>
